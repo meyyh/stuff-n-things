@@ -7,6 +7,14 @@
 #include <sys/mman.h>
 #include <time.h>
 #include <unistd.h>
+#include <stdio.h>
+#include <libavcodec/avcodec.h>
+#include <libavutil/imgutils.h>
+#include <libavformat/avformat.h>
+#include <libswscale/swscale.h>
+#include <SDL2/SDL.h>
+#include <SDL2/SDL_thread.h>
+#include <SDL2/SDL_syswm.h>
 #include <wayland-client.h>
 #include "xdg-shell-client-protocol.h"
 
@@ -202,4 +210,3 @@ main(int argc, char *argv[])
 
     return 0;
 }
-/*https://wayland-book.com/xdg-shell-basics/example-code.html*/
